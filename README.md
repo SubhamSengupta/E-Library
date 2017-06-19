@@ -1,6 +1,6 @@
 #E-Library
 **Online Library Management System**
-*** To run full Functionally ***
+*** To run ***
 1. Copy the folders and files to a Netbeans Web Project
 2. Configure the server
 3. Create an MS Access database and change the paths in JSPs
