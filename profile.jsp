@@ -38,7 +38,7 @@
         </script>
     </head>
     <body>
-        <%!     
+        <%!
                 Connection con = null;
                 ResultSet rs = null;
                 PreparedStatement ps = null;
@@ -111,6 +111,6 @@
             <div class="info" id="own" onclick="showyourbooks()">Your Books</div>
             <div class="info" id="lib" onclick="showtotalbooks()">In Library</div>
         </div>
-        <div id="foot">Developed by Pankaj Kumar</div>
+        <div id="foot">Developed by Subham Sengupta</div>
     </body>
 </html>

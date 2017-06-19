@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <%!     
+        <%!
                 Connection con = null;
                 ResultSet rs = null;
                 PreparedStatement ps = null;
@@ -145,7 +145,7 @@
                 %><script>var c = 1;</script><%
                 while(rs.next()){
                     %>
-                    <script> 
+                    <script>
                         document.write("<div id = 'bkid" + c +"' class='bklst2' onclick='funBook("+ c +")'>");</script>
                         <div id="bname"><%=rs.getString(2)%></div>
                         <div id="auth"><%=rs.getString(3)%></div>
@@ -190,6 +190,6 @@
             </form>
         </div>
        <div id="logout" onclick="logout()">Logout</div>
-       <div id="foot">Developed by Pankaj Kumar</div>
+       <div id="foot">Developed by Subham Sengupta</div>
     </body>
 </html>

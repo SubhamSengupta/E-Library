@@ -29,7 +29,7 @@
                     if(document.forms["bksubfrm"]["bid2"].value === ""){
                         document.getElementById("errReg2").innerHTML = "Fields must be filled.";
                         return false;
-                    }else 
+                    }else
                         return true;
                 }
                 function bookissue(){
@@ -47,7 +47,7 @@
         </script>
     </head>
     <body>
-        <%!     
+        <%!
                 Connection con = null;
                 ResultSet rs = null;
                 PreparedStatement ps = null;
@@ -59,7 +59,7 @@
                 }catch(Exception e){
                     out.println(e);
                 }
-          %>  
+          %>
         <div id="head"></div>
         <%
                 String username = request.getParameter("stdid");
@@ -75,7 +75,7 @@
                         <h2 id="passyear">Passout Year: <%=rs.getString(3)%></h2>
                         <h2 id="univ">University Roll: <%=rs.getString(4)%></h2>
                         <h2 id="id">College ID: <%=rs.getString(5)%></h2>
-                    </div> 
+                    </div>
                     <%
                 }
         %>
@@ -93,7 +93,7 @@
                       </div>
                     <%
                 }
-       %></div>      
+       %></div>
        <div id="bookissue" style="visibility: hidden">
            <form name="bookisssueform" id="bkissfrm" onsubmit="return checkfrm()" action="issuebook.jsp">
                <input type="text" id="bkusername" style="visibility:hidden" name="username"><br>
@@ -116,6 +116,6 @@
        <div id="subbk" onclick="booksubmit()">Submit Book</div>
        <div id="homebtn" onclick="window.location='adminportal.jsp';">Admin Home</div>
         <div id="logout" onclick="logout()">Logout</div>
-        <div id="foot">Developed by Pankaj Kumar</div>
+        <div id="foot">Developed by Subham Sengupta</div>
     </body>
 </html>
