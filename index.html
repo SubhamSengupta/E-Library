@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Management System</title>
+        <link rel="stylesheet" type="text/css" href="./styles/style_index.css">
+        <script src="./scripts/scripts_index.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="head">Library Management System</div>
+        <div id="pic"></div>
+        <div id="regbox">
+            <form  style="visibility: hidden;" id="myform" action="profile.jsp" method="post">
+                    <input type="text" id="user" name ="username" >
+                </form>
+            <form id="regfrm" name="regform" onsubmit="return checkReg()" action="register.jsp">
+                <input type="text" name="name" placeholder="Enter Your Name"><br>
+                <input type="text" name="dept" placeholder="Choose Department"><br>
+                <input type="text" name="passyear" placeholder="Passout Year"><br>
+                <input type="text" name="univ" placeholder="University Roll"><br>
+                <input type="text" name="id" placeholder="College Id"><br>
+                <input type="text" name="usr" placeholder="Choose Username"><br>
+                <input type="password" name="pass" placeholder="Choose Password"><br>
+                <input type="password" name="passCon" placeholder="Confirm Password"><br>
+                <div id="errReg" style="font-size: 15px;"></div>
+                <input id="regbtn" type="submit" value="Register">
+            </form>
+        </div>
+        <div id="loginbox">
+            <p id="dologin">Welcome</p>
+            <form name="loginform" onsubmit="return check()" action="login.jsp" method="post">
+                <input type="text" name="username" placeholder="username"><br>
+                <input type="password" name="password" placeholder="password"><br>
+                <div id="err"></div>
+                <input type="submit" value="Login" >
+            </form>
+            <div id="register" onclick="document.getElementById('regbox').style.visibility = 'visible'">Register</div>
+        </div>
+        <div id="foot">Developed by Pankaj Kumar</div>
+</html>

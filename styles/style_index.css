@@ -1,0 +1,133 @@
+body{
+    background-image: url("../pics/back.jpg");
+    background-repeat: no-repeat;
+}
+#head{
+    position: absolute;
+    height: 60px;
+    width: 99%;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 35px;
+    font-family: areal,verdana;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+#foot{
+    position: absolute;
+    top: 630px;
+    height: 30px;
+    width: 99%;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    font-family: verdana;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+#pic,#regbox{
+    position: absolute;
+    top: 85px;
+    width: 70%;
+    height: 79%;
+    border-radius: 10px;
+}
+#pic{
+    background-image: url("../pics/lib1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#regbox{
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  visibility: hidden;
+}
+#regfrm{
+    position: relative;
+    margin-top: 50px;
+}
+#regbtn{
+    margin-left: 30px;
+}
+#loginbox{
+    position: absolute;
+    left: 71%;
+    top: 85px;
+    height: 79%;
+    width: 28.5%;
+    border: 2px solid lightblue;
+    border-top: 2px solid white;
+    border-radius: 10px;
+    background: linear-gradient(white,#cde1f9);
+}
+#dologin{
+    position: relative;
+    text-align: center;
+    font-family: verdana;
+    font-size: 25px;
+    color: gray;
+}
+input[type=text],input[type=password]{
+    padding: 5px;
+    width: 300px;
+    position: relative;
+    margin-left: 45px;
+    margin-top: 10px;
+    height: 20px;
+    font-family: verdana;
+    font-size: 15px;
+    border: 1px solid transparent;
+    border-bottom: 2px solid gray;
+    border-radius: 5px;
+}
+input[type=text]:hover,input[type=password]:hover{
+    background-color: cornflowerblue;
+    color: white;
+}
+input[type=text]:hover::-webkit-input-placeholder,input[type=password]:hover::-webkit-input-placeholder{
+                color: white;
+}
+input[type=submit],#register{
+    position: relative;
+    width: 250px;
+    margin-top: 40px;
+    margin-left: 75px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 5px;
+    font-family: verdana;
+    font-size: 20px;
+    border: 1px solid transparent;
+    color: white;
+}
+input[type=submit]:hover{
+    color: gray;
+    background-color: white;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
+}
+#register{
+    margin-top: 10px;
+    text-align: center;
+    background-color: white;
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+#register:hover{
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+}
+#err{
+    position: relative;
+    padding: 5px;
+    color: red;
+    font-size: 15px;
+    font-family: areal;
+    text-align: center;
+}
